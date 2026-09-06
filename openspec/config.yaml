@@ -1,0 +1,59 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
+
+context: |
+  This is a React, Next.js, Node.js and TypeScript AI Agent application.
+
+  Technology:
+  - React
+  - Next.js
+  - Node.js
+  - TypeScript with strict mode
+  - LangChain.js
+  - LangGraph.js
+  - OpenAI models
+  - Zod for runtime validation
+  - Vitest for automated tests
+
+  Architecture:
+  - Agents are implemented under app/agents
+  - MCP Servers are implemented under app/mcp
+  - LangGraph state definitions are under app/graph
+  - External configuration is loaded from environment variables
+  - Secrets must never be committed to source control
+
+  Engineering requirements:
+  - Add unit tests for new business logic
+  - Mock LLM and external tool calls in unit tests
+  - Preserve existing public interfaces where possible
+  - Run npm test, npm run lint, and npm run build before completion
