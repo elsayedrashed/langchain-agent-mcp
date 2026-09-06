@@ -34,7 +34,7 @@ schema: spec-driven
 context: |
   This is a React, Next.js, Node.js and TypeScript AI Agent application.
 
-  Technology Stack:
+  Technology:
   - React
   - Next.js
   - Node.js
